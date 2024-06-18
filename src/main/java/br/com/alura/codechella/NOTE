@@ -1,0 +1,39 @@
+o clean Architecture é tem 5 principais objetivo
+independente de agente externo
+independente de banco de dados
+indepenmdete de framework
+que é tudo testavel
+independete de interface grafica
+
+na criação de clean
+precisa de 4 pastas principais
+
+DOMAIN
+onde vai ter as entidades e value object
+entidade que tem um indetificador unico
+valeu object que conjuto de atributos dele faz ele ser unico
+
+no domain vai ter regra de negocio tipo se tem ser maior que 18 anos
+email tem ser de um jeito
+cpf e etc
+
+APPLICATION
+onde vai ter casos de usos oq sua aplicação precisa ter obrigatoriamente
+por exemplo cadastra e listar usario e gateways, onde ai vai ser camada que vai ligar com um banco ou algo do tipo caso preciso
+
+INFRA
+que ai sim vai ser parte de infra que vai ligar paa no banco
+vai ter persistece onde vc vai escolher se ele vai ligar tal banco a tal lugar fazer tal coisa
+onde vc vai colocar represetação deste banco como entidade etc
+gataways que esse vai se implementado por oq tem no gataways de application
+
+ vai ligar por exemplo com banco de dados,
+ nesse gateways tem banco de dados que vai ser usado o userEn comunicação entre uma entidade e domain
+ a conversão
+ controller caso preciso onde vc vai separa ligar com tudo que precisa ser ligado
+ um com controller com banco dedos o tipo de banco de dados etc
+
+
+CONFIG
+não parte obrigatorio caso não precise mas na maioria das aplicação vai precisar
+onde vai ficar parte de configuração de um sitema para outro caso preciso
